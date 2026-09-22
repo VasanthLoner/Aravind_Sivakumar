@@ -15,7 +15,7 @@ main { overflow: hidden; }
 a { color: inherit; text-decoration: none; }
 
 .nav { align-items: center; display: flex; justify-content: space-between; padding: 28px 6vw; position: absolute; top: 0; width: 100%; z-index: 5; }
-.brand { font: 700 1.1rem/1 var(--display); letter-spacing: -.04em; }
+.brand { display: inline-flex; font: 700 1.1rem/1 var(--display); letter-spacing: -.04em; }
 .brand span, em { color: var(--accent); font-style: normal; }
 .nav-links { align-items: center; display: flex; font: 600 .68rem var(--mono); gap: 30px; text-transform: uppercase; }
 .nav-links a, .text-link, .contact-button { transition: color .2s ease; }

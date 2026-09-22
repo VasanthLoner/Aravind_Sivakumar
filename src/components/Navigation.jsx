@@ -1,7 +1,7 @@
 function Navigation() {
   return (
     <nav className="nav">
-      <a className="brand" href="#top">AS<span>.</span></a>
+      <a className="brand" href="#top" aria-label="Aravind Sivakumar home">AS<span>.</span></a>
       <div className="nav-links">
         <a href="#work">Work</a>
         <a href="#profile">Profile</a>
