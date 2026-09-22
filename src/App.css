@@ -21,6 +21,19 @@ a { color: inherit; text-decoration: none; }
 .nav-links a, .text-link, .contact-button { transition: color .2s ease; }
 .nav-links a:hover, .text-link:hover, .contact-button:hover { color: var(--accent); }
 
+.site-loader { align-items: stretch; background: #0d1117; color: #edf7f1; display: flex; flex-direction: column; inset: 0; justify-content: space-between; padding: 28px 6vw; position: fixed; transform: translateY(0); transition: transform .5s cubic-bezier(.76,0,.24,1); z-index: 100; }
+.site-loader.is-leaving { transform: translateY(-100%); }
+.loader-topline, .loader-bottomline { color: #8e9f97; display: flex; font: .62rem var(--mono); justify-content: space-between; letter-spacing: .11em; text-transform: uppercase; }
+.loader-topline span:first-child { color: #72ffc0; font: 700 1.1rem/1 var(--display); letter-spacing: -.04em; }
+.loader-center { align-items: center; display: flex; flex-direction: column; gap: 13px; }
+.loader-center strong { color: #edf7f1; font: 500 clamp(4rem, 10vw, 8rem)/.9 var(--display); letter-spacing: -.08em; }
+.loader-center strong span { color: #72ffc0; }
+.loader-center > span { color: #8e9f97; font: .62rem var(--mono); letter-spacing: .15em; text-transform: uppercase; }
+.loader-progress { background: #72ffc0; box-shadow: 0 0 10px rgba(114,255,192,.65); display: block; height: 1px; max-width: 220px; position: relative; width: 32vw; }
+.loader-progress::before { background: #edf7f1; content: ''; height: 5px; left: 0; position: absolute; top: -2px; width: 0; animation: loader-progress 650ms cubic-bezier(.2,.8,.2,1) forwards; }
+@keyframes loader-progress { to { width: 100%; } }
+@media (prefers-reduced-motion: reduce) { .site-loader { transition: none; } .loader-progress::before { animation: none; width: 100%; } }
+
 .hero { background: var(--paper); min-height: 100svh; overflow: hidden; padding: 18vh 9vw 7vh; position: relative; }
 .hero::before { background: var(--soft); border-radius: 50%; content: ''; height: 42vw; max-height: 620px; max-width: 620px; position: absolute; right: 6vw; top: 14vh; width: 42vw; }
 .hero-grid { border: 1px solid rgba(23,24,21,.11); border-radius: 50%; height: 48vw; max-height: 700px; max-width: 700px; position: absolute; right: 3vw; top: 10vh; width: 48vw; }

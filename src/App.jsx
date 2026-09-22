@@ -4,6 +4,7 @@ import CursorEffects from './components/CursorEffects'
 import Hero from './components/Hero'
 import Navigation from './components/Navigation'
 import PortfolioSections from './components/PortfolioSections'
+import SiteLoader from './components/SiteLoader'
 
 function App() {
   useEffect(() => {
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <main>
+      <SiteLoader />
       <CursorEffects />
       <Navigation />
       <Hero />
