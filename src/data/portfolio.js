@@ -46,3 +46,10 @@ export const education = [
   ['2012 - 2014', 'HSSLC · Bio Maths', 'Rajavignesh Higher Secondary School', 'Percentage · 80.41%'],
   ['2010 - 2012', 'SSLC', 'Mani Matriculation Higher Secondary School', 'Percentage · 78.00%'],
 ]
+
+export const recognitions = [
+  ['2025', 'Best Presentation', 'Awarded by Ando-san, TQM Consultant, for strong presentation and stakeholder management skills.'],
+  ['2023', 'Sobha Construction Excellence Award', 'Recognized as a Value Champion for dedication to core values and contributions to Operational Excellence.'],
+  ['2020 - 2022', 'Best Outgoing Student', 'Awarded by PSG College of Technology for academic performance and overall contribution.'],
+  ['2022', 'Best Paper', 'Awarded at the Research Conclave by PSG College of Technology.'],
+]

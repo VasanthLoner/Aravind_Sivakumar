@@ -239,6 +239,16 @@ body, main { background: var(--paper); color: var(--ink); }
 .education-content .education-list { max-width: 900px; }
 @media (max-width: 900px) { .education { gap: 50px; grid-template-columns: 1fr; } .education-list { padding-left: 30px; } .education-item::before { left: -37px; } .education-item::after { left: -32px; } }
 @media (max-width: 900px) { .section-pad { padding-bottom: 3vh; padding-top: 3vh; } .statement, .work, .experience, .professional-skills, .education, .capabilities, .footer { gap: 32px; } .education-content h2 { margin-bottom: 30px; } }
+.recognitions { background: #101820; color: #edf7f1; display: grid; gap: 9vw; grid-template-columns: 1fr 2.4fr; }
+.recognitions .section-kicker { color: #72ffc0; }
+.recognition-content h2 { font-size: clamp(2.35rem, 4vw, 4.5rem); margin-bottom: 44px; }
+.recognition-list { border-left: 1px solid rgba(114,255,192,.42); padding-left: 42px; position: relative; }
+.recognition-item { border-bottom: 1px solid rgba(151,255,205,.2); padding: 26px 0; position: relative; }
+.recognition-item::before { background: #101820; border: 2px solid #72ffc0; border-radius: 50%; box-shadow: 0 0 5px rgba(114,255,192,.6); content: ''; height: 11px; left: -49px; position: absolute; top: 33px; transition: background .45s ease, box-shadow .45s ease; width: 11px; }
+.recognition-item.is-visible::before { background: #72ffc0; box-shadow: 0 0 8px #72ffc0, 0 0 18px rgba(114,255,192,.7); }
+.recognition-item h3 { color: #edf7f1; font: 500 clamp(1.4rem, 2.5vw, 2.4rem)/1.1 var(--display); letter-spacing: -.04em; margin: 4px 0 8px; }
+.recognition-item p:last-child { color: #a7b9b0; font-size: .86rem; line-height: 1.6; margin: 0; max-width: 620px; }
+@media (max-width: 900px) { .recognitions { gap: 32px; grid-template-columns: 1fr; } .recognition-list { padding-left: 30px; } .recognition-item::before { left: -37px; } }
 .experience-item::after { background: transparent; bottom: -1px; box-shadow: none; content: ''; left: -44px; position: absolute; top: 48px; transition: background .55s ease, box-shadow .55s ease; width: 2px; }
 .experience-item.is-visible::before { background: #72ffc0; }
 .experience-item.is-visible::after { background: #72ffc0; box-shadow: 0 0 8px #72ffc0, 0 0 18px rgba(114,255,192,.7); }
